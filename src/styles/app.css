@@ -1,0 +1,13 @@
+#light {
+    background-color: #fff;
+    color: #111;
+}
+#dark {
+    background-color: #040D12;
+    color: #fff;
+}
+
+main section{
+    width: auto;
+    height: auto;
+}

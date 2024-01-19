@@ -1,0 +1,142 @@
+.about {
+    width: 100%;
+    padding-block: 2.5rem;
+    position: relative;
+}
+
+ .about .title {
+    max-width: 930px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1rem;
+    padding-inline: .8rem;
+}
+.title h4 {
+    font-size: 2.5rem;
+}
+
+.about-content {
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: relative;
+        /* flex-wrap: wrap; */
+}
+
+.text-side {
+    max-width: 40%;
+}
+.pic-side img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.text-side {
+    text-align: center;
+}
+.box-white {
+    background-image: radial-gradient(#0fcb96 2.5px, transparent 2.5px);
+    background-size: 18px 18px;
+    background-color: #ffffff;
+    width: 300px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.box-dark {
+    background-image: radial-gradient(#0fcb96 2.5px, transparent 2.5px);
+    background-size: 18px 18px;
+    background-color: #040d12;
+    width: 300px;
+    height: 130px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.about-main-content{
+    position: relative;
+    z-index: 10;
+    padding-bottom: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-inline: 2rem;
+}
+
+.box-white-second {
+    background-image: radial-gradient(#0fcb96 2.5px, transparent 2.5px);
+    background-size: 18px 18px;
+    background-color: #ffffff;
+    width: 300px;
+    height: 120px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+}
+.box-dark-second {
+    background-image: radial-gradient(#0fcb96 2.5px, transparent 2.5px);
+    background-size: 18px 18px;
+    background-color: #040d12;
+    width: 300px;
+    height: 120px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 0;
+}
+
+@media (max-width: 950px) {
+    .about-content {
+        flex-wrap: wrap;
+        padding-top: 3rem;
+    }
+    .text-side {
+        max-width: 80%;
+    }
+    .box-dark,.box-dark-second,
+    .box-white,.box-white-second{
+        width: 250px;
+        z-index: 0;
+    }
+    .about-main-content .title {
+        z-index: 10;
+        position: relative;
+    }
+    .box-white, .box-dark {
+        position: absolute;
+        top: 50px;
+    }
+}
+
+@media (max-width: 560px) {
+    .about-main-content .text-side {
+        max-width: 100%;
+        text-align: left;
+    }
+    .about-content{
+        padding-top: 1rem;
+    }
+    .about .title h4 {
+        font-size: 2rem;
+    }
+    .pic-side img {
+        min-height: 150px;
+    }
+    .about-main-content{
+ 
+        padding-inline: 1rem;
+    }
+    .about-content .text-side {
+        text-align: center;
+    }
+}
